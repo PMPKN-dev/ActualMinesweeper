@@ -1,0 +1,50 @@
+﻿<Window x:Class="ActualMinesweeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ActualMinesweeper"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        MinHeight="450" MaxHeight="450"
+        MinWidth="400" MaxWidth="400">
+    <Grid 
+        x:Name="Menu"
+        Background="Beige">
+        
+        <Grid 
+            x:Name="Board"
+            Background="Gray"
+            Margin="24,51,24,24"
+            >
+            <Canvas x:Name="DrawingBoard">
+                
+            </Canvas>
+            
+        </Grid>
+        <ToolBar
+            Height="25"
+            VerticalAlignment="Top"
+            >
+            <Button Height="23" Name="Button" Click="Button_Click">
+                <Button.Content>
+                    <TextBlock Text="DropDown"/>
+                </Button.Content>
+                <Button.ContextMenu >
+                    <ContextMenu>
+                        <MenuItem Header="First Option"></MenuItem>
+                        <MenuItem Header="Second Option"></MenuItem>
+                        <MenuItem Header="Third Option"></MenuItem>
+                    </ContextMenu>
+
+                </Button.ContextMenu>
+            </Button>
+
+
+
+
+
+
+        </ToolBar>
+    </Grid>
+</Window>
